@@ -1,0 +1,152 @@
+.home-section, .intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.intro{
+  height:20vh;
+}
+
+  .home-section {
+    background-image: url(./static/home.png);
+    height: 100vh;
+    background-size: cover;
+    border: 2px solid #00f;
+}
+
+@media screen and (min-width: 651px) and (max-width: 1250px){
+  .logo-text {
+    text-align: center;
+    font-family: Raleway,Helvetica,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: .1em;
+}
+}
+.newcol{
+  align-items: center!important;
+  justify-content: flex-end!important;
+  flex-direction: column!important;
+  display: flex!important;
+}
+.newcol:hover{
+  transform: scale(1.1);
+}
+.about-session {
+  height: 100vh;
+  background-color: #f4623a;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.about-left {
+  width: 50vw;
+  height: 50vh;
+  margin-right: 5vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  display: flex;
+}
+.ABOUT_ME{
+
+    font-size: 2em;
+    font-weight: 800;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 1vh;
+    letter-spacing: .1em;
+    color: #fff;
+
+}
+.about-me-p {
+  font-weight: 400;
+  font-size: 1em;
+}
+.portfolio-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+.email-pic {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 2vh;
+}
+.trans:hover{
+  transform: scale(1.1);
+}
+.trans{
+  padding: 0 5px;
+}
+.projects-section {
+  height: 100vh;
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+}
+#my-projects{
+  border-bottom: 3px solid #000;
+    margin-top: 14vh;
+    margin-bottom: 5vh;
+    color: #000;
+    padding-bottom: 1vh;
+}
+.all-Projects-Card,.Projects-Card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.all-Projects-Card {
+  width: 95vw;
+}
+.Projects-Card {
+  border: 1px solid grey;
+  box-shadow: 5px 10px 8px #888;
+  width: 30vw;
+}
+.exp-parag, .project-but {
+  width: 28vw;
+  display: flex;
+  align-items: center;
+}
+.project-but {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: center;
+  color: #fff;
+  margin-bottom: 1.5vh;
+  cursor: pointer;
+}
+.exp-parag {
+  height: 14vh;
+  margin-top: 1vh;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: 1em;
+}
+
+
+
