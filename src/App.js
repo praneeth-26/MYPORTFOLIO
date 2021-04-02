@@ -28,6 +28,8 @@ import Score3 from'./static/Score3.png'
 import Score4 from'./static/Score4.png'
 
 import React,{useState} from "react"
+import resume from './static/GopiResume.pdf'
+import resumeimage from './static/resume.png'
 
 function App() {
   const [Gmatchshow,setGmatch]=useState(false)
@@ -53,7 +55,8 @@ function App() {
     <div className="App">
       <div className="home-section">
         <div className="intro">
-          <h1>Hellow ! I'm GOPI MACHA</h1>
+          <h1 style={{color: '#fff'}}>Hellow ! I'm GOPI MACHA</h1>
+          <div className="letter-changer"></div>
         </div>
         <Container>
           <Row>
@@ -75,7 +78,7 @@ function App() {
             </Col>
           
           </Row>
-          <Row>
+          <Row style={{marginTop:'5px'}}>
           <Col md={3} xs={6} className="newcol">
             <img alt="React" src={react} style={{width: "5vw"}}></img>
             <h6 className="logo-text">React</h6>
@@ -98,7 +101,7 @@ function App() {
       <div className="about-session">
         <div className="about-left">
           <p className="ABOUT_ME">ABOUT ME</p>
-          <p className="about-me-p"> Hi Stranger! Welcome to my page. Let me introduce myself. I am a web developer based in Garden State. I have nearly two years of professional experience in creating and maintaining full-stack web applications with PERN and MERN stacks. My favorite thing in programming is bug hunting. I love investigating problems,  providing, and implementing permanent solutions. Also, I have an eye for details and usually, I am the one who reports the bugs first in my team. That's why my co-workers call me a bug-magnet. I have to admit, I kinda like it. My biggest motivation is creating an application that makes a difference one day.  Besides programming, I love to travel, play ping-pong, cook, and read.  That's pretty much it about me and I would love to learn more about you. Feel free to message me on Linkedin. Quick reminder: If you need a website or maintenance for a Non-profit organization,  I offer free service.  </p>
+          <p className="about-me-p"> Hi Stranger! Welcome to my page. Let me introduce myself. I am a web developer based in Georgia State. I have nearly two years of professional experience in creating and maintaining Front-end web applications with Angular and React in Enterpi Software Solution Private Limited which is in Hyderabd,India. Currently I am pursuing Masters in Software Engineering at Kennesaw State University. My favorite thing in programming is bug hunting and I love investigating problems,  providing, and implementing permanent solutions. Also, I have an eye for details and usually, I am the one who reports the bugs first in my team. That's why my co-workers call me a bug-magnet. I have to admit, I kinda like it. My biggest motivation is creating an application that makes a difference one day.  Besides programming, I love to travel, play ping-pong, cook, and read.  That's pretty much it about me and I would love to learn more about you. Feel free to message me on Linkedin. Quick reminder: If you need a website or maintenance for a Non-profit organization,  I offer free service.  </p>
         </div>
         <div className="about-right">
 <img  alt="pic" src={image} className="portfolio-pic"></img>
@@ -223,7 +226,7 @@ function App() {
 <Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
         More Info
       </Button>
-<a target="_blank" rel="noreferrer" href="https://ksugmatch.azurewebsites.net">Live Site</a>
+<a target="_blank" rel="noreferrer" href="https://ksugmatch.azurewebsites.net" className="btn btn-primary">Live Site</a>
       <Modal show={Gmatchshow} onClick={(event) => handleClose('Gmatch')}>
         <Modal.Header closeButton>
           <Modal.Title>GMATCH</Modal.Title>
@@ -280,22 +283,22 @@ function App() {
  
   </Carousel.Item>
 </Carousel>
-<p className="exp-parag">Use GMatch to find players who are in search of teammates with similar skill sets, tendencies, and attitudes. Our team wants to help you find your team.</p>
+<p className="exp-parag">Real-time scoring is available on apps, web pages, and broadcasts to keep your fans up to date regardless of their location.</p>
 <div className="project-but">
 <Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
         More Info
       </Button>
-<a target="_blank" rel="noreferrer" href="https://ksugmatch.azurewebsites.net">Live Site</a>
+<a target="_blank" rel="noreferrer" href="http://www.scorebird.com/" className="btn btn-primary">Live Site</a>
       <Modal show={Gmatchshow} onClick={(event) => handleClose('Gmatch')}>
         <Modal.Header closeButton>
-          <Modal.Title>GMATCH</Modal.Title>
+          <Modal.Title>SCOREBIRD</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>JavaScript | React| Css | Rest API | Bootstrap | CI/CD </p>
+          <p>JavaScript | React| Css | Bootstrap | Manual Testing </p>
           <ul>
-            <li>Implemented the tabular functionality to the application</li>
-            <li>Used the Rest Api to get Call of Duty Players data</li>
-            <li>Added CI/CD functionality with the help of Azure Devops</li>
+            <li>Implemented some page layouts at the beginning of the project when i am under training in Enterpi Software Solutions</li> 
+            <li>Created the test cases based on user stories</li>
+            <li>Followed Agile methodology</li>
 
           </ul>
         </Modal.Body>
@@ -305,7 +308,15 @@ function App() {
           </div>
         </div>
         </div>
-      <div className="contact-session"></div>
+      <div className="contact-session">
+      <h1 id="my-projects">Download Resume</h1>
+      <a href={resume} download>
+      <img className="Resume" alt ="Resume" src={resumeimage} ></img>
+      </a>
+    
+   
+     
+      </div>
     </div>
   );
 }

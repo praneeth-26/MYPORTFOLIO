@@ -11,12 +11,21 @@
 }
 
   .home-section {
-    background-image: url(./static/home.png);
+    background-image: url(./static/home.jpg);
     height: 100vh;
     background-size: cover;
-    border: 2px solid #00f;
+    /* border: 2px solid #00f; */
 }
-
+.Resume{
+  width:8vh
+}
+#title:after {
+  content: "Full Stack Web Developer";
+  -webkit-animation: spin 8s linear;
+  animation: spin 8s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 @media screen and (min-width: 651px) and (max-width: 1250px){
   .logo-text {
     text-align: center;
@@ -147,6 +156,13 @@
   letter-spacing: .1em;
   font-size: 1em;
 }
+.contact-session{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: center;
+}
 @media screen and (max-width: 650px){
   .home-section, .intro {
     display: flex;
@@ -256,6 +272,30 @@
   letter-spacing: .1em;
   font-size: .5em;
 }
+.Resume{
+  width:10vh
+}
+}
+
+:global(.letter-changer:after) {
+  animation: changeLetter 3s linear infinite alternate;
+}
+
+/* .letter-changer:after {
+ 
+
+
+} */
+@keyframes changeLetter {
+  0% {
+    content: "A";
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "B";
+  }
 }
 
 
