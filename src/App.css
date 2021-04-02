@@ -147,6 +147,116 @@
   letter-spacing: .1em;
   font-size: 1em;
 }
+@media screen and (max-width: 650px){
+  .home-section, .intro {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.about-left, .about-session {
+  display: flex !important;
+  flex-direction: column !important;
+  flex-wrap: nowrap !important;
+  justify-content: center !important;
+}
+.about-left {
+  width: 70vw;
+  height: 50vh;
+  margin-right: 5vw;
+  align-items: flex-start;
+  text-align: center;
+}
+.about-left, .about-session {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.about-me-p, .ABOUT_ME {
+  letter-spacing: .1em;
+  color: #fff;
+  width: 70vw;
+}
+.about-me-p {
+  font-weight: 400;
+  font-size: .5em;
+}
+.projects-section {
+  height: 100vh;
+  background-color: #f5f5f5;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#my-projects {
+  border-bottom: 3px solid #000;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  color: #000;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.all-Projects-Card, .Projects-Card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.all-Projects-Card {
+  flex-direction: row;
+  width: 95vw;
+}
+.Projects-Card {
+  border: 1px solid grey;
+  box-shadow: 5px 10px 8px #888;
+  width: 80vw;
+  flex-direction: column;
+  margin-bottom: 4vh;
+}
+.exp-parag {
+  width: 80vw;
+  margin-top: 1vh;
+  font-weight: 400;
+  letter-spacing: .1em;
+  font-size: .5em;
+  text-align: center;
+}
+.project-but {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  margin-bottom: 1.5vh;
+  cursor: pointer;
+}
+.intro h1 {
+  color: #fff;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+  text-shadow: 2px 2px #000;
+  text-align: center;
+}
+.logo-text {
+  text-align: center;
+  color: #fff;
+  font-family: Raleway,Helvetica,sans-serif;
+  font-weight: 700;
+  letter-spacing: .1em;
+  font-size: .5em;
+}
+}
 
 
 

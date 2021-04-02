@@ -14,18 +14,40 @@ import image from './static/GM.jpg'
 import github from './static/github.png'
 import linkedin from './static/linkedin.png'
 import email from './static/email.png'
-import craze1 from './static/craze1.png'
-import craze2 from './static/craze2.png'
-import craze3 from './static/craze3.png'
+import craze1 from './static/Craze1.png'
+import craze2 from './static/Craze2.png'
+import craze3 from './static/Craze3.png'
+import craze4 from './static/Craze3.png'
+import Gmatch1 from './static/Gmatch1.png'
+import Gmatch2 from './static/Gmatch2.png'
+import Gmatch3 from './static/Gmatch3.png'
+import Gmatch4 from './static/Gmatch4.png'
+import Score1 from'./static/Score1.png'
+import Score2 from'./static/Score2.png'
+import Score3 from'./static/Score3.png'
+import Score4 from'./static/Score4.png'
+
 import React,{useState} from "react"
 
 function App() {
-  const [show,setShow]=useState(false)
-  function handleShow(){
-    setShow(true)
+  const [Gmatchshow,setGmatch]=useState(false)
+  const [Oncrazeshow,setOncraze]=useState(false)
+  function handleShow(project){
+    if(project === 'Gmatch'){
+      setGmatch(true)
+    }
+    else if(project === 'Oncraze'){
+      setOncraze(true)
+    }
+  
   }
- function handleClose(){
-  setShow(false)
+ function handleClose(project){
+  if(project === 'Gmatch'){
+    setGmatch(false)
+  }
+  else if(project === 'Oncraze'){
+    setOncraze(false)
+  }
  }
   return (
     <div className="App">
@@ -124,23 +146,156 @@ function App() {
 
  
   </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={craze4}
+      alt="Third slide"
+    />
+
+ 
+  </Carousel.Item>
 </Carousel>
 <p className="exp-parag">Craze was designed for those who love to travel, try different foods and learn about the latest fitness trends</p>
 <div className="project-but">
-<Button variant="primary" onClick={handleShow}>
+<Button variant="primary" onClick={(event) => handleShow('Oncraze')}>
         More Info
       </Button>
-<a target="_blank" href="https://www.oncraze.com/">Live Site</a>
-      <Modal show={show} onHide={handleClose}>
+<a target="_blank" rel="noreferrer" href="https://www.oncraze.com/" className="btn btn-primary">Live Site</a>
+      <Modal show={Oncrazeshow} onClick={(event) => handleClose('Oncraze')}>
         <Modal.Header closeButton>
           <Modal.Title>ONCRAZE</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>JavaScript | React| NodeJS | Express | Bootstrap | NodeMailer </p>
+          <p>JavaScript | Angular| JQuery | Css | Html </p>
           <ul>
             <li>Added some extra functionality to the application like Cards functionality</li>
             <li>Applied Bootstrap for developing responsive and mobile-first website and CSS keyframes for animation</li>
             <li>Used the Postman tool to analyze the data</li>
+
+          </ul>
+        </Modal.Body>
+     
+      </Modal>
+</div>
+          </div>
+         {/* second one */}
+          <div className="Projects-Card">
+          <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Gmatch1}
+      alt="First slide"
+    />
+  
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Gmatch2}
+      alt="Second slide"
+    />
+
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Gmatch3}
+      alt="Third slide"
+    />
+
+ 
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Gmatch4}
+      alt="Third slide"
+    />
+
+ 
+  </Carousel.Item>
+</Carousel>
+<p className="exp-parag">Use GMatch to find players who are in search of teammates with similar skill sets, tendencies, and attitudes. Our team wants to help you find your team.</p>
+<div className="project-but">
+<Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
+        More Info
+      </Button>
+<a target="_blank" rel="noreferrer" href="https://ksugmatch.azurewebsites.net">Live Site</a>
+      <Modal show={Gmatchshow} onClick={(event) => handleClose('Gmatch')}>
+        <Modal.Header closeButton>
+          <Modal.Title>GMATCH</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>JavaScript | React| Css | Rest API | Bootstrap | CI/CD </p>
+          <ul>
+            <li>Implemented the tabular functionality to the application</li>
+            <li>Used the Rest Api to get Call of Duty Players data</li>
+            <li>Added CI/CD functionality with the help of Azure Devops</li>
+
+          </ul>
+        </Modal.Body>
+     
+      </Modal>
+</div>
+          </div>
+          {/* third one */}
+          <div className="Projects-Card">
+          <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Score1}
+      alt="First slide"
+    />
+  
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Score2}
+      alt="Second slide"
+    />
+
+
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Score3}
+      alt="Third slide"
+    />
+
+ 
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src={Score4}
+      alt="Fourth slide"
+    />
+
+ 
+  </Carousel.Item>
+</Carousel>
+<p className="exp-parag">Use GMatch to find players who are in search of teammates with similar skill sets, tendencies, and attitudes. Our team wants to help you find your team.</p>
+<div className="project-but">
+<Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
+        More Info
+      </Button>
+<a target="_blank" rel="noreferrer" href="https://ksugmatch.azurewebsites.net">Live Site</a>
+      <Modal show={Gmatchshow} onClick={(event) => handleClose('Gmatch')}>
+        <Modal.Header closeButton>
+          <Modal.Title>GMATCH</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>JavaScript | React| Css | Rest API | Bootstrap | CI/CD </p>
+          <ul>
+            <li>Implemented the tabular functionality to the application</li>
+            <li>Used the Rest Api to get Call of Duty Players data</li>
+            <li>Added CI/CD functionality with the help of Azure Devops</li>
 
           </ul>
         </Modal.Body>
