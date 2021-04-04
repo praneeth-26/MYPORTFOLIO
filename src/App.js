@@ -17,7 +17,7 @@ import email from './static/email.png'
 import craze1 from './static/Craze1.png'
 import craze2 from './static/Craze2.png'
 import craze3 from './static/Craze3.png'
-import craze4 from './static/Craze3.png'
+import craze4 from './static/Craze4.png'
 import Gmatch1 from './static/Gmatch1.png'
 import Gmatch2 from './static/Gmatch2.png'
 import Gmatch3 from './static/Gmatch3.png'
@@ -101,7 +101,7 @@ function App() {
       <div className="about-session">
         <div className="about-left">
           <p className="ABOUT_ME">ABOUT ME</p>
-          <p className="about-me-p"> Hi Stranger! Welcome to my page. Let me introduce myself. I am a web developer based in Georgia State. I have nearly two years of professional experience in creating and maintaining Front-end web applications with Angular and React in Enterpi Software Solution Private Limited which is in Hyderabd,India. Currently I am pursuing Masters in Software Engineering at Kennesaw State University. My favorite thing in programming is bug hunting and I love investigating problems,  providing, and implementing permanent solutions. Also, I have an eye for details and usually, I am the one who reports the bugs first in my team. That's why my co-workers call me a bug-magnet. I have to admit, I kinda like it. My biggest motivation is creating an application that makes a difference one day.  Besides programming, I love to travel, play ping-pong, cook, and read.  That's pretty much it about me and I would love to learn more about you. Feel free to message me on Linkedin. Quick reminder: If you need a website or maintenance for a Non-profit organization,  I offer free service.  </p>
+          <p className="about-me-p"> Hi Stranger! Welcome to my page. Let me introduce myself. I am a web developer based in Georgia State. I have nearly two years of professional experience in creating and maintaining Front-end web applications with Angular and React in Enterpi Software Solution Private Limited which is in Hyderabd,India. Currently I am pursuing Masters in Software Engineering at Kennesaw State University. My favorite thing in programming is bug hunting and I love investigating problems,  providing, and implementing permanent solutions. Also, I have an eye for details and usually, I am the one who reports the bugs first in my team. That's why my co-workers call me a bug-magnet. I have to admit, I kinda like it. My biggest motivation is creating an application that makes a difference one day.  Besides programming, I love to cook.  That's pretty much it about me and I would love to learn more about you. Feel free to message me on Linkedin. Quick reminder: If you need a website or maintenance for a Non-profit organization,  I offer free service.  </p>
         </div>
         <div className="about-right">
 <img  alt="pic" src={image} className="portfolio-pic"></img>
