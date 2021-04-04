@@ -159,6 +159,7 @@ function App() {
  
   </Carousel.Item>
 </Carousel>
+<h4 style={{color:'#007bff', fontFamily: 'cursive',marginBottom:'0px',marginTop:'2px'}}>ONCRAZE</h4>
 <p className="exp-parag">Craze was designed for those who love to travel, try different foods and learn about the latest fitness trends</p>
 <div className="project-but">
 <Button variant="primary" onClick={(event) => handleShow('Oncraze')}>
@@ -221,6 +222,7 @@ function App() {
  
   </Carousel.Item>
 </Carousel>
+<h4 style={{color:'#007bff',fontFamily: 'cursive',marginBottom:'0px',marginTop:'2px'}}>GMATCH</h4>
 <p className="exp-parag">Use GMatch to find players who are in search of teammates with similar skill sets, tendencies, and attitudes. Our team wants to help you find your team.</p>
 <div className="project-but">
 <Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
@@ -283,6 +285,7 @@ function App() {
  
   </Carousel.Item>
 </Carousel>
+<h4 style={{color:'#007bff',fontFamily: 'cursive',marginBottom:'0px',marginTop:'2px'}}>SCOREBIRD</h4>
 <p className="exp-parag">Real-time scoring is available on apps, web pages, and broadcasts to keep your fans up to date regardless of their location.</p>
 <div className="project-but">
 <Button variant="primary" onClick={(event) => handleShow('Gmatch')} >
