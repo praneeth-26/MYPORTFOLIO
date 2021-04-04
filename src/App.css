@@ -244,6 +244,8 @@
   letter-spacing: .1em;
   font-size: .5em;
   text-align: center;
+  display: block;
+  height: auto;
 }
 .project-but {
   width: 50vw;
