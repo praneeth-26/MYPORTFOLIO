@@ -9,6 +9,9 @@
 .intro{
   height:20vh;
 }
+  .logo-text{
+    color:#fff;
+}
 
   .home-section {
     background-image: url(./static/home.jpg);
